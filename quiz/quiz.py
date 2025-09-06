@@ -8,7 +8,7 @@ load_dotenv()
 key = os.getenv("KEY")
 
 
-genai.configure(api_key=key)
+genai.configure(api_key=st.secrets("KEY"))
 
 
 
